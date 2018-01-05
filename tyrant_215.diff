@@ -7,10 +7,12 @@ feature TELEMETRY
 feature AIRMODE
 feature ANTI_GRAVITY
 serial 1 64 115200 57600 0 115200
+serial 31 32 115200 57600 0 115200
 aux 0 0 0 1800 2100
 aux 1 13 0 900 1200
 aux 2 28 4 1600 2100
 set serialrx_provider = SBUS
+set blackbox_p_ratio = 16
 set blackbox_device = SPIFLASH
 set min_throttle = 1050
 profile 0
