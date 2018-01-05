@@ -1,0 +1,39 @@
+# Betaflight / SPRACINGF3 (SRF3) 3.2.0 Sep 28 2017 / 16:45:44 (ceb6f70) MSP API: 1.36
+
+feature -RX_PPM
+feature -TRANSPONDER
+feature RX_SERIAL
+feature SOFTSERIAL
+feature ANTI_GRAVITY
+map TAER1234
+serial 2 64 115200 57600 0 115200
+serial 31 32 115200 57600 0 115200
+aux 0 0 0 1750 2100
+aux 1 1 4 900 1200
+aux 2 13 0 900 1200
+aux 3 28 4 1800 2100
+rxfail 3 h
+set gyro_sync_denom = 2
+set baro_hardware = NONE
+set min_check = 1005
+set fpv_mix_degrees = 30
+set serialrx_provider = SBUS
+set dshot_idle_value = 250
+set motor_pwm_protocol = DSHOT300
+set align_board_yaw = 270
+set small_angle = 180
+profile 0
+
+set vbat_pid_gain = ON
+set setpoint_relax_ratio = 30
+set dterm_setpoint_weight = 200
+set d_pitch = 22
+set p_roll = 43
+set d_roll = 20
+rateprofile 0
+
+set rc_rate = 125
+set rc_rate_yaw = 125
+set rc_expo = 22
+set rc_expo_yaw = 10
+set yaw_srate = 65
