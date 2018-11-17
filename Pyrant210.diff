@@ -63,7 +63,7 @@ aux 3 36 1 1800 2100 0 0
 rxfail 6 s 1000
 
 # master
-set gyro_sync_denom = 2
+set gyro_use_32khz = ON
 set acc_trim_pitch = -2
 set mag_hardware = NONE
 set rssi_channel = 8
@@ -72,7 +72,7 @@ set min_throttle = 1030
 set motor_pwm_protocol = DSHOT600
 set failsafe_delay = 15
 set failsafe_throttle_low_delay = 20
-set pid_process_denom = 2
+set pid_process_denom = 1
 set osd_vbat_pos = 44
 set osd_rssi_pos = 2082
 set osd_tim_1_pos = 54
@@ -114,14 +114,10 @@ set vtx_power = 2
 set vtx_freq = 5790
 
 # profile
-profile 0
+profile 1
 
 set dterm_notch_cutoff = 0
-set iterm_relax = RPY
-set p_pitch = 58
-set i_pitch = 58
-set d_pitch = 40
-set d_roll = 32
+set iterm_relax = RP
 
 # rateprofile
 rateprofile 0
