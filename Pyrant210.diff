@@ -50,7 +50,8 @@ led 7 2,0:N:CO:1
 # aux
 aux 0 0 0 900 1200 0 0
 aux 1 13 2 900 1200 0 0
-aux 2 36 1 1800 2100 0 0
+aux 2 35 2 1800 2100 0 0
+aux 3 36 1 1800 2100 0 0
 
 # adjrange
 
@@ -68,6 +69,7 @@ set mag_hardware = NONE
 set rssi_channel = 8
 set serialrx_provider = CRSF
 set min_throttle = 1030
+set motor_pwm_protocol = DSHOT600
 set failsafe_delay = 15
 set failsafe_throttle_low_delay = 20
 set pid_process_denom = 2
@@ -108,6 +110,7 @@ set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
 set vtx_band = 2
 set vtx_channel = 4
+set vtx_power = 2
 set vtx_freq = 5790
 
 # profile
@@ -115,6 +118,10 @@ profile 0
 
 set dterm_notch_cutoff = 0
 set iterm_relax = RPY
+set p_pitch = 58
+set i_pitch = 58
+set d_pitch = 40
+set d_roll = 32
 
 # rateprofile
 rateprofile 0
